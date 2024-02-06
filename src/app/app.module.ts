@@ -8,11 +8,13 @@ import { ProductsModule } from './products/products.module';
 import { SharedModule } from './shared/shared.module';
 
 import { HttpClientModule } from '@angular/common/http';
-import { ReactiveFormsModule } from '@angular/forms';
+import { ReactiveFormsModule,FormsModule } from '@angular/forms';
+import { ContacutComponent } from './contacut/contacut.component';
 
 @NgModule({
   declarations: [
-    AppComponent
+    AppComponent,
+    ContacutComponent
   ],
   imports: [
     BrowserModule,
@@ -20,7 +22,7 @@ import { ReactiveFormsModule } from '@angular/forms';
     ProductsModule,
     CartsModule,
     SharedModule,
- 
+    FormsModule,
     HttpClientModule ,
     ReactiveFormsModule,
   ],

@@ -50,7 +50,7 @@
 					<div class="col-lg-2 col-md-2 col-12">
 						<!-- Logo -->
 						<div class="logo">
-							<a href="index.html"><img src="/src/assets/images/logo.png" alt="logo"></a>
+							<a href="index.html"><img src="assets/images/logo.png" alt="logo"></a>
 						</div>
 						<!--/ End Logo -->
 						<!-- Search Form -->
@@ -202,7 +202,9 @@
 									<li><a href="#">denim </a></li>
 								</ul>
 							</div>
-						</div>
+						</div> 
+
+
 						<div class="col-lg-9 col-12">
 							<div class="menu-area">
 								<!-- Main Menu -->
@@ -211,24 +213,22 @@
 										<div class="nav-inner">	
 											<ul class="nav main-menu menu navbar-nav">
 													<li class="active"><a href="#">Home</a></li>
-												
-                                                    <li> <a href="#"routerLink="/products"> Products</a></li>
-                <li > <a href="#"routerLink="/cart" > Cart</a></li>												
+													<li><a [routerLink]="['/products']">Product</a></li>												
 													<li><a href="#">Service</a></li>
 													<li><a href="#">Shop<i class="ti-angle-down"></i><span class="new">New</span></a>
 														<ul class="dropdown">
-															<li><a href="shop-grid.html">Shop Grid</a></li>
-															
+															<li><a [routerLink]="['/ShopGrid']">Shop Grid</a></li>
+															<li><a [routerLink]="['/cart']">Cart</a></li>
 																			</ul>
 													</li>
 													<li><a href="#">Pages</a></li>									
-													<li><a href="#">Blog<i class="ti-angle-down"></i></a>
+													<li><a [routerLink]="['/Blog']">Blog<i class="ti-angle-down"></i></a>
 														<ul class="dropdown">
-															<li><a href="checkout.html">Checkout</a></li>
-										<li><a href="blog-single-sidebar.html">Blog Single Sidebar</a></li>
+															<li><a [routerLink]="['/Checkout']">Checkout</a></li>
+										<li><a [routerLink]="['/BlogSingleSidebar']">Blog Single Sidebar</a></li>
 														</ul>
 													</li>
-													<li><a href="contact.html"  [routerLink]="['/contact']">Contact Us</a></li>
+													<li><a  [routerLink]="['/Contacut']">Contact Us</a></li>
 												</ul>
 										</div>
 									</div>
@@ -236,6 +236,23 @@
 								<!--/ End Main Menu -->	
 							</div>
 						</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 					</div>
 				</div>
 			</div>
